@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "alea",
+	"version": "${version}",
+	"name": "Alea",
+	"description": "Description!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/alea/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.quentin.alea.Alea"
+		],
+		"client": [
+			"fr.quentin.alea.AleaClient"
+		],
+		"fabric-datagen": [
+			"fr.quentin.alea.AleaDataGenerator"
+		]
+	},
+	"mixins": [
+		"alea.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
